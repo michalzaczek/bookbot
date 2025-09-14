@@ -10,3 +10,7 @@ def count_characters(text):
             letters_dict[c] = letters_dict.get(c, 0) + 1
 
     return letters_dict
+
+
+def get_sorted_letters(letters_dict):
+    return sorted(letters_dict.items(), key=lambda item: item[1], reverse=True)
